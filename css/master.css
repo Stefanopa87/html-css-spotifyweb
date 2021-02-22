@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* aside */
+
+aside{
+  float: left;
+  height: calc(100vh - 100px);
+  margin-bottom: 100px;
+  width: 150px;
+  /* debug */
+  border: solid 2px red;
+}
+
+/* header */
+
+header{
+  float: left;
+  height: 100px;
+  width: calc(100% - 150px);
+  /* debug */
+  border: solid 2px blue;
+
+
+}
+
+main{
+  float: left;
+  height: calc(100vh - 200px);
+  width: calc(100% - 150px);
+  overflow-y: auto;
+  /* debug */
+  border: solid 2px yellow;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  /* debug */
+  border: solid 2px green;
+}
