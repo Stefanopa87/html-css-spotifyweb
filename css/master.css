@@ -130,9 +130,46 @@ main{
   overflow-y: auto;
   background-color: #141922;
   padding-top: 100px;
-  /* debug */
-  color: #fff;
 }
+
+.list_container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.list_container li{
+  display: inline-block;
+  list-style: none;
+  padding: 10px 10px 5px 10px;
+  position: relative;
+}
+
+.list_container a{
+  color: #A3A3A3;
+}
+
+.list_container li:hover a,
+.list_container a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.hover_line {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 1px;
+  width: 20px;
+  transform: translateX(-50%);
+  border-bottom: 1px solid #ADFF2F;
+}
+
+.list_container li:hover .hover_line{
+  display: inline-block;
+}
+
 
 /* footer */
 
