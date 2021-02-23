@@ -40,7 +40,9 @@ aside{
   margin-bottom: 100px;
   width: 230px;
   background-color: #000;
-  position: relative;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
 }
 
 aside a{
@@ -61,6 +63,7 @@ aside .aside_link{
 
 .aside_top{
   width: 100%;
+    flex-grow: 1;
 }
 
 .aside_top a img{
@@ -83,8 +86,8 @@ aside .aside_link{
 
 .aside_bottom{
   width: 100%;
-  position: absolute;
-  bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
 }
 
 .aside_bottom hr{
