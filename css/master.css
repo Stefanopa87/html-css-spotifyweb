@@ -179,11 +179,6 @@ main{
   display: inline-block;
 }
 
-/* .recently_box{
-  height: 300px;
-  border: solid 1px red;
-} */
-
 .img_size{
   width: 100%;
 }
@@ -199,7 +194,10 @@ main h6{
 }
 
 
-
+/* hover su img */
+img:hover {
+  filter: contrast(0.5);
+}
 
 
 /* footer */
