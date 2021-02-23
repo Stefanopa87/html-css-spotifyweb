@@ -181,9 +181,13 @@ main{
 [class*="col-"]{
   height: 200px;
   max-width: 200px;
-  border: solid 1px black;
-  background: aqua;
+  border: solid 1px red;
 }
+
+.img_size{
+  max-height: 85%;
+}
+
 
 
 /* footer */
