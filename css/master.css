@@ -119,7 +119,7 @@ color: #fff;
 border-color: #fff;
 padding: 1% 2%;
 border-radius: 25px;
-margin-right: 2%;
+margin-right: 20px;
 transition: 0.5s;
 }
 
@@ -178,14 +178,19 @@ main{
   display: inline-block;
 }
 
-[class*="col-"]{
-  height: 200px;
-  max-width: 200px;
+/* .recently_box{
+  height: 300px;
   border: solid 1px red;
-}
+} */
 
 .img_size{
-  max-height: 85%;
+  width: 100%;
+}
+
+.recently_box_text{
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
 }
 
 
