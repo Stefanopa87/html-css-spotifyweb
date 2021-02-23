@@ -105,6 +105,7 @@ header{
   height: 100px;
   width: calc(100% - 230px);
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 900;
 }
 
 .header_container{
@@ -192,6 +193,12 @@ main{
   margin-top: 10px;
   text-align: center;
 }
+
+main h6{
+  color: #7D7F84;
+}
+
+
 
 
 
