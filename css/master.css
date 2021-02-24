@@ -277,3 +277,27 @@ footer{
   top: 10px;
   position: relative;
 }
+
+/* .play_line_white{
+  position: absolute;
+  color: #fff;
+  height: 4px;
+  width: 20%;
+  border-radius: 25px;
+  top: 10px;
+} */
+
+.footer_right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vol_line{
+  height: 4px;
+  width: 30%;
+  background-color: grey;
+  border-radius: 25px;
+  margin-left: 15px;
+  position: relative;
+}
