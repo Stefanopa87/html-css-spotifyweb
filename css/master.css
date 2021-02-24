@@ -201,29 +201,26 @@ main h6{
 }
 
 /* hover su img */
-img:hover {
-  filter: contrast(0.5);
-}
 
-.img_size:hover .circle_play{
-  display: block;
-  z-index: 999;
+.img_hover:hover {
+  filter: contrast(0.5);
 }
 
 .circle_play{
   position: absolute;
   font-size: 3rem;
 
-    top: 22%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
 }
 
-.recently_box{
-  /* position: relative; */
+.img_hover:hover .circle_play{
+  display: inline-block;
+  z-index: 999;
+  color: red;
 }
-
 
 /* footer */
 
@@ -238,34 +235,45 @@ footer{
   align-items: center;
 }
 
-.little_aside{
-  border: solid 1px red;
+.footer_left,
+.footer_right{
+  /* border: solid 1px red; */
   height: 80px;
-  width: 20%;
-  align-content: center;
-}
-.aside_left{
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.little_aside img{
   width: 25%;
-}
-
-.text_play{
-  width: 30%;
-}
-
-.icon_play{
-  width: 30%;
-  height: 80px;
   align-content: center;
 }
 
-.big_center{
-  border: solid 1px red;
+.footer_left{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_left img{
+  height: 100%;
+}
+
+.footer_center{
+  /* border: solid 1px red; */
   height: 80px;
   width: 50%;
+  text-align: center;
+}
+
+.footer_center a:hover{
+  color: #ADFF2F;
+}
+
+.center_play{
+  display: flex;
+  justify-content: space-around;
+}
+
+.play_line{
+  height: 4px;
+  width: 60%;
+  background-color: grey;
+  border-radius: 25px;
+  top: 10px;
+  position: relative;
 }
