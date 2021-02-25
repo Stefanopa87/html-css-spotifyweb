@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.my_white{
+  color: #fff;
+}
+
+.my_grey{
+  color: #A3A3A3;
+}
 
 /* IDEA: regole per stile scrollbar */
 /* width */
@@ -28,14 +35,6 @@
     background: #a3a3a3;
 }
 /* IDEA: fine regole stile scrollbar */
-
-.my_white{
-  color: #fff;
-}
-
-.my_grey{
-  color: #A3A3A3;
-}
 
 /* aside */
 aside{
@@ -101,6 +100,29 @@ aside .aside_link{
   font-size: 2rem;
   margin-bottom: 10px;
 }
+
+/* aside per mobile */
+.mobile_nav{
+  display: none;
+}
+
+.mobile_nav_container{
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prova_,
+.prova_2{
+  font-size: x-large;
+}
+
+.prova_ li{
+  list-style: none;
+}
+
 /* header */
 
 header{
@@ -188,7 +210,6 @@ main{
 
 .img_size{
   width: 100%;
-  /* position: relative; */
 }
 
 .recently_box_text{
@@ -205,6 +226,7 @@ main h6{
 
 .img_hover:hover {
   filter: contrast(0.7);
+  cursor: pointer;
 }
 
 .circle_play{
@@ -279,15 +301,6 @@ footer{
   position: relative;
 }
 
-/* .play_line_white{
-  position: absolute;
-  color: #fff;
-  height: 4px;
-  width: 20%;
-  border-radius: 25px;
-  top: 10px;
-} */
-
 .footer_right{
   display: flex;
   justify-content: flex-end;
@@ -302,3 +315,48 @@ footer{
   margin-left: 15px;
   position: relative;
 }
+
+/* .play_line_white{
+  position: absolute;
+  color: #fff;
+  height: 4px;
+  width: 20%;
+  border-radius: 25px;
+  top: 10px;
+} */
+
+
+
+/* media per aside */
+@media all and (max-width: 590px) {
+  /* coumuni */
+  aside{
+    width: 80px;
+  }
+  .aside_top,
+  .aside_bottom{
+    display: none;
+  }
+
+  .mobile_nav{
+    display: block;
+  }
+
+
+  header{
+    width: calc(100% - 80px);
+  }
+  main{
+    width: calc(100% - 80px);
+  }
+
+  .fa-redo-alt,
+  .fa-random{
+    display: none;
+  }
+
+
+
+
+
+ }
