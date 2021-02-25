@@ -37,6 +37,7 @@
 /* IDEA: fine regole stile scrollbar */
 
 /* aside */
+
 aside{
   float: left;
   height: calc(100vh - 100px);
@@ -114,12 +115,12 @@ aside .aside_link{
   align-items: center;
 }
 
-.prova_,
-.prova_2{
+.mobile_top,
+.mobile_bottom{
   font-size: x-large;
 }
 
-.prova_ li{
+.mobile_top li{
   list-style: none;
 }
 
@@ -145,7 +146,7 @@ header{
 .my_button{
 color: #fff;
 border-color: #fff;
-padding: 1% 2%;
+padding: 10px 40px;
 border-radius: 25px;
 margin-right: 20px;
 transition: 0.5s;
@@ -288,6 +289,7 @@ footer{
 .center_play{
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .play_line{
@@ -295,43 +297,32 @@ footer{
   width: 60%;
   background-color: grey;
   border-radius: 25px;
-  top: 10px;
+  }
+
+.play_line_white{
+  height: 100%;
+  width: 30%;
+  border-radius: 25px;
+  background: #fff;
   position: relative;
 }
 
-.play_line_white{
+.circle_line{
   position: absolute;
-  left: 50%;
-  top: 60px;
-  height: 4px;
-  width: 8%;
-  border-radius: 25px;
-  background: red;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #ADFF2F;
+  right: 0;
+  transform: translate(10%, -35%);
+  display: none;
 }
 
-/* .play_line {
-    animation: spin 5s linear infinite;
+.play_line_white:hover .circle_line,
+.volume_line_white:hover .circle_line{
+  display: block;
+  cursor: pointer;
 }
-@keyframes spin {
-    0% {
-        background-color: green;
-    }
-    50% {
-        background-color: red;
-    }
-    100% {
-        background-color: green;
-    }
-} */
-
-/* .play_line_white{
-position: absolute;
-color: #fff;
-height: 4px;
-width: 20%;
-border-radius: 25px;
-top: 10px;
-} */
 
 .footer_right{
   display: flex;
@@ -348,8 +339,15 @@ top: 10px;
   position: relative;
 }
 
-
-
+.volume_line_white{
+  left: 50%;
+  top: 60px;
+  height: 100%;
+  width: 30%;
+  border-radius: 25px;
+  background: #fff;
+  position: sticky;
+}
 
 /* media per aside */
 @media all and (max-width: 590px) {
@@ -374,4 +372,4 @@ top: 10px;
   .fa-random{
     display: none;
   }
- }
+}
