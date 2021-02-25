@@ -260,7 +260,6 @@ footer{
 
 .footer_left,
 .footer_right{
-  /* border: solid 1px red; */
   height: 80px;
   flex-grow: 1;
   align-content: center;
@@ -277,7 +276,6 @@ footer{
 }
 
 .footer_center{
-  /* border: solid 1px red; */
   height: 80px;
   flex-grow: 2;
   text-align: center;
@@ -301,6 +299,40 @@ footer{
   position: relative;
 }
 
+.play_line_white{
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  height: 4px;
+  width: 8%;
+  border-radius: 25px;
+  background: red;
+}
+
+/* .play_line {
+    animation: spin 5s linear infinite;
+}
+@keyframes spin {
+    0% {
+        background-color: green;
+    }
+    50% {
+        background-color: red;
+    }
+    100% {
+        background-color: green;
+    }
+} */
+
+/* .play_line_white{
+position: absolute;
+color: #fff;
+height: 4px;
+width: 20%;
+border-radius: 25px;
+top: 10px;
+} */
+
 .footer_right{
   display: flex;
   justify-content: flex-end;
@@ -316,14 +348,6 @@ footer{
   position: relative;
 }
 
-/* .play_line_white{
-  position: absolute;
-  color: #fff;
-  height: 4px;
-  width: 20%;
-  border-radius: 25px;
-  top: 10px;
-} */
 
 
 
@@ -337,26 +361,17 @@ footer{
   .aside_bottom{
     display: none;
   }
-
   .mobile_nav{
     display: block;
   }
-
-
   header{
     width: calc(100% - 80px);
   }
   main{
     width: calc(100% - 80px);
   }
-
   .fa-redo-alt,
   .fa-random{
     display: none;
   }
-
-
-
-
-
  }
